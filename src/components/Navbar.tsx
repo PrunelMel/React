@@ -9,10 +9,11 @@ const Navbar = () => {
             React Jobs
             </span>
             <div className='md:ml-auto'>
-              <div className='flex space-x-2'>
-                Home
-                Jobs
-                Add Jobs
+              <div className='flex space-x-4'>
+                <a className="text-white hover:bg-black p-2">Home</a>
+                <a className="text-white hover:bg-black p-2">Jobs</a>
+                <a className="text-white hover:bg-black p-2">Add Jobs</a>
+                
               </div>
             </div>
           </div>
