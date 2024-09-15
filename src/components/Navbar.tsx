@@ -1,4 +1,5 @@
 import react from '../assets/react.svg'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className='bg-indigo-700 border-b border-indigo-500'>
@@ -12,14 +13,14 @@ const Navbar = () => {
             <div className='md:ml-auto'>
               <div className='flex space-x-4'>
                 <div className='flex items-center justify-center border border-transparent rounded hover:bg-black'>
-                  <a className="text-white p-2">Home</a>
+                  <Link to='/' className="text-white p-2">Home</Link>
                 </div>
                 <div className='flex items-center justify-center border border-transparent rounded hover:border-black'>
-                  <a className="text-white hover:bg-black p-2">Jobs</a>
+                  <Link to='/jobs' className="text-white hover:bg-black p-2">Jobs</Link>
 
                 </div>
                 <div className='flex items-center justify-center border border-transparent rounded hover:border-black'>
-                  <a className="text-white hover:bg-black p-2">Add Jobs</a> 
+                  <Link to='/add-job' className="text-white hover:bg-black p-2">Add Jobs</Link> 
                 </div>
                 
               </div>
